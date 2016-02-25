@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* This is a comment! Text here will be ignored by the browser. */
+body {
+	 font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+     background-color: #;
+     margin: 0;
+     padding: 50;
+     color: #3f403f;
+	 margin: 0;
+}
+.homePage {
+	background: #7A8F99;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+.header {
+	background: #419299;
+	text-align: center;
+	margin: 0px;
+	padding: 5;
+	float: left;
+	width: 100%;
+	height: 65px;
+	
+}
+.nav {
+	background: #94C7CC;
+	margin: 0px;
+	padding: 5;
+	float: left;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+}
+.content {
+	background: #F4FFFC;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.footer {
+	background: #F4FFFC;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+a:link {
+     color: #3f403f;
+}
+a:visited {
+     color: #;
+}
+a:hover, a:active, a:focus { 
+     text-decoration: underline;
+}
