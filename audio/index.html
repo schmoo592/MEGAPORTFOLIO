@@ -5,21 +5,52 @@
 	<meta charset="UTF-8">
 	<title>My Portfolio</title>
 <link href="../myCSS.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <h1>Alex's Portfolio</h1>
+  <div class="header"><img src="../images/SmallerBanner.png" width="960" height="198" alt=""/>
+<h1>&nbsp;</h1>
   </div>
   <div class="nav">
-    <h3><a href="../Programming/index.html">Programming</a> &nbsp; &nbsp; <a href="../raster/index.html">Raster</a> &nbsp; &nbsp; <a href="../vector/index.html">Vector</a> &nbsp; &nbsp; <a href="../index.html">Home</a> &nbsp; &nbsp; <a href="../video/index.html">Video</a> &nbsp; &nbsp; <a href="index.html">Audio</a> &nbsp; &nbsp; <a href="../animation/index.html">Animation</a></h3>
+    <h3><a href="../animation/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Animation','','../images/AnimationButton2.fw.png',1)"><img src="../images/AnimationButton1.fw.png" alt="Animation" width="137" height="30" id="Animation"></a><a href="../audio/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('AUDIO','','../images/AudioButton2.fw.png',1)"><img src="../images/AudioButton1.fw.png" alt="Audio" width="137" height="30" id="AUDIO"></a><a href="../video/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Video','','../images/Videobutton2.fw.png',1)"><img src="../images/Videobutton1.fw.png" alt="Video" width="137" height="30" id="Video"></a><a href="../vector/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Vector','','../images/VectorButton2.fw.png',1)"><img src="../images/VectorButton1.fw.png" alt="Vector" width="137" height="30" id="Vector"></a><a href="../raster/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Raster','','../images/RasterButton2.fw.png',1)"><img src="../images/RasterButton1.fw.png" alt="Raster" width="137" height="30" id="Raster"></a><a href="../Programming/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ProgrammingButton','','../images/ProgrammingButton2.fw.png',1)"><img src="../images/ProgrammingButton1.fw.png" alt="Programming" width="137" height="30" id="ProgrammingButton"></a><a href="../index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home','','../images/HomeButton2.png',1)"><img src="../images/HomeButton1.png" alt="Home" width="137" height="30" id="Home"></a></h3></h3>
   </div>
   <div class="content">
     <p>Audio Projects</p>
-    <p>Sweet Mama Randy's Springtime Luau</p>
+    <p>Sweet Mama Randy's Springtime Luau:</p>
+    <p>Click <a href="SweetMamaRandy's.mp3">here</a> to donwload if the player is broken.</p>
+    <audio controls height="100" width="100">
+ <source src="SweetMamaRandy's.mp3" type="audio/mp3">
+ <embed height="50" width="100" src="SweetMamaRandy's.mp3"> </source>
+</audio>
+    <p>SPOOKY NOISES: </p>
     <p>Click <a href="30SecondAudio.wav">here</a> to donwload if the player is broken. </p>
-    <audio controls>30SecondAudio.wav</audio>
-    <p>&nbsp;</p>
+    <audio controls height="100" width="100">
+ <source src="30SecondAudio.wav" type="audio/wav">
+ <embed height="50" width="100" src="30SecondAudio.wav"> </source>
+</audio>
   </div>
   <div class="footer">
     <h4><a href="../AboutMe.html">About Me</a> | Contact | Copyright 2016</h4>
